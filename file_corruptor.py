@@ -6,7 +6,7 @@ from os import rename
 1 GigaOctet (Go) = 1 000 000 000 octets
 """
 
-caractere = "ç"
+caractere = "ø"
 ecriture = ""
 
 print("Quel type de fichier voulez-vous corrompre?\n")
@@ -21,7 +21,7 @@ Exemple :
 1 GigaOctet (Go) = 1 000 000 000 octets
 
 """)
-taille_du_fichier = input("Taille [en octets]: ")
+taille_du_fichier = input("Taille [en octets, sans espaces]: ")
 
 for i in range(int(taille_du_fichier)):
     ecriture += caractere
