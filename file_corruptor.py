@@ -21,7 +21,13 @@ Exemple :
 1 GigaOctet (Go) = 1 000 000 000 octets
 
 """)
-taille_du_fichier = input("Taille [en octets, sans espaces]: ")
+taille_du_fichier = input("Taille [en octets]: ")
+taille = taille_du_fichier.split(" ")
+taille_du_fichier = ""
+for element in taille:
+    taille_du_fichier += element
+    
+
 
 for i in range(int(taille_du_fichier)):
     ecriture += caractere
