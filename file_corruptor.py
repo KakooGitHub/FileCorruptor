@@ -1,5 +1,7 @@
 from os import rename
 from random import choice
+from string import ascii_letters, digits
+
 
 """
 1 KiloOctet (ko) = 1 000 octets
@@ -8,6 +10,12 @@ from random import choice
 """
 
 caractere = ["ø", "#", "¤", "£", "$", "§", "&", "¥", "¨", "á", "ð", "ÿ", "¶", "µ"]
+for char in digits:
+    caractere.append(digits)
+    
+for char in ascii_letters:
+    caractere.append(digits)
+    
 ecriture = ""
 
 print("Quel type de fichier voulez-vous corrompre?\n")
