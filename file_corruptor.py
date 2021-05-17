@@ -1,4 +1,5 @@
 from os import rename
+from random import choice
 
 """
 1 KiloOctet (ko) = 1 000 octets
@@ -6,7 +7,7 @@ from os import rename
 1 GigaOctet (Go) = 1 000 000 000 octets
 """
 
-caractere = "ø"
+caractere = ["ø", "#", "¤", "£", "$", "§", "&"]
 ecriture = ""
 
 print("Quel type de fichier voulez-vous corrompre?\n")
@@ -30,7 +31,7 @@ for element in taille:
 
 
 for i in range(int(taille_du_fichier)):
-    ecriture += caractere
+    ecriture += choice(caractere)
 
 with open('fichier.txt', "w") as f :
     f.write(ecriture)
