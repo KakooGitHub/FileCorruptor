@@ -7,7 +7,7 @@ from random import choice
 1 GigaOctet (Go) = 1 000 000 000 octets
 """
 
-caractere = ["ø", "#", "¤", "£", "$", "§", "&"]
+caractere = ["ø", "#", "¤", "£", "$", "§", "&", "¥", "¨", "á", "ð", "ÿ", "¶", "µ"]
 ecriture = ""
 
 print("Quel type de fichier voulez-vous corrompre?\n")
